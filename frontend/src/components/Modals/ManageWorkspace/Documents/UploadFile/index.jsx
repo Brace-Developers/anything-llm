@@ -88,21 +88,20 @@ export default function UploadFile({
           <div className="flex flex-col items-center justify-center h-full">
             <CloudArrowUp className="w-8 h-8 text-white/80" />
             <div className="text-white text-opacity-80 text-sm font-semibold py-1">
-              Document Processor Unavailable
+              Procesador de documentos no disponible
             </div>
             <div className="text-white text-opacity-60 text-xs font-medium py-1 px-20 text-center">
-              We can't upload your files right now because the document
-              processor is offline. Please try again later.
+              No podemos cargar sus archivos en este momento porque el procesador de documentos está fuera de línea. Inténtelo de nuevo más tarde.
             </div>
           </div>
         ) : files.length === 0 ? (
           <div className="flex flex-col items-center justify-center">
             <CloudArrowUp className="w-8 h-8 text-white/80" />
             <div className="text-white text-opacity-80 text-sm font-semibold py-1">
-              Click to upload or drag and drop
+              Haga clic para cargar o arrastre y suelte
             </div>
             <div className="text-white text-opacity-60 text-xs font-medium py-1">
-              supports text files, csv's, spreadsheets, audio files, and more!
+              Soporta archivos de texto, csv's, hojas de cálculo, archivos de audio y más!
             </div>
           </div>
         ) : (
@@ -126,7 +125,7 @@ export default function UploadFile({
         )}
       </div>
       <div className="text-center text-white text-opacity-50 text-xs font-medium w-[560px] py-2">
-        or submit a link
+        o suba un enlace
       </div>
       <form onSubmit={handleSendLink} className="flex gap-x-2">
         <input
@@ -142,13 +141,11 @@ export default function UploadFile({
           type="submit"
           className="disabled:bg-white/20 disabled:text-slate-300 disabled:border-slate-400 disabled:cursor-wait bg bg-transparent hover:bg-slate-200 hover:text-slate-800 w-auto border border-white text-sm text-white p-2.5 rounded-lg"
         >
-          {fetchingUrl ? "Fetching..." : "Fetch website"}
+          {fetchingUrl ? "Cargando..." : "Cargar sitio web"}
         </button>
       </form>
       <div className="mt-6 text-center text-white text-opacity-80 text-xs font-medium w-[560px]">
-        These files will be uploaded to the document processor running on this
-        AnythingLLM instance. These files are not sent or shared with a third
-        party.
+        Estos archivos se cargarán en el procesador de documentos que se ejecuta en esta instancia de AnythingLLM. Estos archivos no se envían ni comparten con un tercero.
       </div>
     </div>
   );

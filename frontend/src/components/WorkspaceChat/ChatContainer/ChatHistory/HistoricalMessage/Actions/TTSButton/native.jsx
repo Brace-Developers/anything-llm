@@ -39,7 +39,7 @@ export default function NativeTTSMessage({ message }) {
         onClick={speakMessage}
         data-tooltip-id="message-to-speech"
         data-tooltip-content={
-          speaking ? "Pause TTS speech of message" : "TTS Speak message"
+          speaking ? "Pausar mensaje de voz" : "Escuchar mensaje"
         }
         className="border-none text-zinc-300"
         aria-label={speaking ? "Pause speech" : "Speak message"}

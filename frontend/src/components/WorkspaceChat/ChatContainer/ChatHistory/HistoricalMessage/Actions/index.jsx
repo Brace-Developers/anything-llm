@@ -104,9 +104,9 @@ function CopyMessage({ message }) {
         <button
           onClick={() => copyText(message)}
           data-tooltip-id="copy-assistant-text"
-          data-tooltip-content="Copy"
+          data-tooltip-content="Copiar"
           className="text-zinc-300"
-          aria-label="Copy"
+          aria-label="Copiar"
         >
           {copied ? (
             <Check size={20} className="mb-1" />

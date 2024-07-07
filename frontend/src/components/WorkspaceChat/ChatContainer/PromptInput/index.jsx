@@ -169,7 +169,7 @@ export default function PromptInput({
                 }}
                 value={promptInput}
                 className="cursor-text max-h-[50vh] md:max-h-[350px] md:min-h-[40px] mx-2 md:mx-0 py-2 w-full text-[16px] md:text-md text-white bg-transparent placeholder:text-white/60 resize-none active:outline-none focus:outline-none flex-grow"
-                placeholder={"Send a message"}
+                placeholder={"Enviar un mensaje"}
               />
               {buttonDisabled ? (
                 <StopGenerationButton />
@@ -180,8 +180,8 @@ export default function PromptInput({
                     type="submit"
                     className="inline-flex justify-center rounded-2xl cursor-pointer text-white/60 hover:text-white group ml-4"
                     data-tooltip-id="send-prompt"
-                    data-tooltip-content="Send prompt message to workspace"
-                    aria-label="Send prompt message to workspace"
+                    data-tooltip-content="Enviar mensaje al espacio de trabajo"
+                    aria-label="Enviar mensaje al espacio de trabajo"
                   >
                     <PaperPlaneRight className="w-7 h-7 my-3" weight="fill" />
                     <span className="sr-only">Send message</span>

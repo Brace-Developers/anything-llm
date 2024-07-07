@@ -10,8 +10,8 @@ export default function AvailableAgentsButton({ showing, setShowAgents }) {
     <div
       id="agent-list-btn"
       data-tooltip-id="tooltip-agent-list-btn"
-      data-tooltip-content="View all available agents you can use for chatting."
-      aria-label="View all available agents you can use for chatting."
+      data-tooltip-content="Ver todos los agentes disponibles que puedes usar para chatear."
+      aria-label="Ver todos los agentes disponibles que puedes usar para chatear."
       onClick={() => setShowAgents(!showing)}
       className={`flex justify-center items-center opacity-60 hover:opacity-100 cursor-pointer ${
         showing ? "!opacity-100" : ""

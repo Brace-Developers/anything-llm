@@ -111,7 +111,7 @@ const ModalTabSwitcher = ({ selectedTab, setSelectedTab }) => {
               : "bg-sidebar-button text-white/20 font-medium hover:text-white"
           }`}
         >
-          Documents
+          Documentos
         </button>
         <button
           onClick={() => setSelectedTab("dataConnectors")}
@@ -121,7 +121,7 @@ const ModalTabSwitcher = ({ selectedTab, setSelectedTab }) => {
               : "bg-sidebar-button text-white/20 font-medium hover:text-white"
           }`}
         >
-          Data Connectors
+          Conectores de datos
         </button>
       </div>
     </div>

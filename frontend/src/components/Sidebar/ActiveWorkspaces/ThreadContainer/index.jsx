@@ -126,7 +126,7 @@ export default function ThreadContainer({ workspace }) {
         idx={0}
         activeIdx={activeThreadIdx}
         isActive={activeThreadIdx === 0}
-        thread={{ slug: null, name: "default" }}
+        thread={{ slug: null, name: "Por defecto" }}
         hasNext={threads.length > 0}
       />
       {threads.map((thread, i) => (
@@ -187,9 +187,9 @@ function NewThreadButton({ workspace }) {
         </div>
 
         {loading ? (
-          <p className="text-left text-slate-100 text-sm">Starting Thread...</p>
+          <p className="text-left text-slate-100 text-sm">Creando hilo...</p>
         ) : (
-          <p className="text-left text-slate-100 text-sm">New Thread</p>
+          <p className="text-left text-slate-100 text-sm">Nuevo hilo</p>
         )}
       </div>
     </button>
@@ -214,7 +214,7 @@ function DeleteAllThreadButton({ ctrlPressed, threads, onDelete }) {
           />
         </div>
         <p className="text-white text-left text-sm group-hover:text-red-400">
-          Delete Selected
+          Eliminar seleccionado
         </p>
       </div>
     </button>

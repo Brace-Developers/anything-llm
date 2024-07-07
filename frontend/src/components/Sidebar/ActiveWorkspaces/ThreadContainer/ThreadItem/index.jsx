@@ -67,7 +67,7 @@ export default function ThreadItem({
           <div className="w-full flex justify-between">
             <div className="w-full ">
               <p className={`text-left text-sm text-slate-400/50 italic`}>
-                deleted thread
+                hilo eliminado
               </p>
             </div>
             {ctrlPressed && (

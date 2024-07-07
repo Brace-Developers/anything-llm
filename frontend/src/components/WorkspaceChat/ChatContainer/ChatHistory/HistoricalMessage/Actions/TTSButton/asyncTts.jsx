@@ -59,10 +59,10 @@ export default function AsyncTTSMessage({ slug, chatId }) {
         onClick={speakMessage}
         data-tooltip-id="message-to-speech"
         data-tooltip-content={
-          speaking ? "Pause TTS speech of message" : "TTS Speak message"
+          speaking ? "Pausar mensaje de voz" : "Leer mensaje"
         }
         className="border-none text-zinc-300"
-        aria-label={speaking ? "Pause speech" : "Speak message"}
+        aria-label={speaking ? "Parar mensaje de voz" : "Leer mensaje"}
       >
         {speaking ? (
           <PauseCircle size={18} className="mb-1" />

@@ -31,7 +31,9 @@ export default function AddPresetModal({ isOpen, onClose, onSave }) {
       >
         <div className="relative bg-main-gradient rounded-lg shadow">
           <div className="flex items-start justify-between p-4 border-b rounded-t border-gray-500/50">
-            <h3 className="text-xl font-semibold text-white">Add New Preset</h3>
+            <h3 className="text-xl font-semibold text-white">
+              Agregar nuevo preset
+            </h3>
             <button
               onClick={onClose}
               type="button"

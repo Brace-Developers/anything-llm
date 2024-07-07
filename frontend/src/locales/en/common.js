@@ -1,91 +1,91 @@
 const TRANSLATIONS = {
   common: {
-    "workspaces-name": "Workspaces Name",
+    "workspaces-name": "Nombre del Espacio de Trabajo",
     error: "error",
-    success: "success",
-    user: "User",
-    selection: "Model Selection",
-    saving: "Saving...",
-    save: "Save changes",
-    previous: "Previous Page",
-    next: "Next Page",
+    success: "éxito",
+    user: "Usuario",
+    selection: "Selección de Modelo",
+    saving: "Guardando...",
+    save: "Guardar cambios",
+    previous: "Página Anterior",
+    next: "Página Siguiente",
   },
 
-  // Setting Sidebar menu items.
+  // Elementos del menú de la barra lateral de configuración.
   settings: {
-    title: "Instance Settings",
-    system: "General Settings",
-    invites: "Invites",
-    users: "Users",
-    workspaces: "Workspaces",
-    "workspace-chats": "Workspace Chats",
-    customization: "Customization",
-    "api-keys": "Developer API",
+    title: "Configuración de la Instancia",
+    system: "Configuración General",
+    invites: "Invitaciones",
+    users: "Usuarios",
+    workspaces: "Espacios de Trabajo",
+    "workspace-chats": "Chats de Espacio de Trabajo",
+    customization: "Personalización",
+    "api-keys": "API de Desarrollador",
     llm: "LLM",
-    transcription: "Transcription",
-    embedder: "Embedder",
-    "text-splitting": "Text Splitter & Chunking",
-    "voice-speech": "Voice & Speech",
-    "vector-database": "Vector Database",
-    embeds: "Chat Embed",
-    "embed-chats": "Chat Embed History",
-    security: "Security",
-    "event-logs": "Event Logs",
-    privacy: "Privacy & Data",
-    "ai-providers": "AI Providers",
-    "agent-skills": "Agent Skills",
-    admin: "Admin",
-    tools: "Tools",
-    "experimental-features": "Experimental Features",
-    contact: "Contact Support",
-    "browser-extension": "Browser Extension",
+    transcription: "Transcripción",
+    embedder: "Incrustador",
+    "text-splitting": "Divisor de Texto y Fragmentación",
+    "voice-speech": "Voz y Habla",
+    "vector-database": "Base de Datos Vectorial",
+    embeds: "Incrustación de Chat",
+    "embed-chats": "Historial de Incrustación de Chat",
+    security: "Seguridad",
+    "event-logs": "Registros de Eventos",
+    privacy: "Privacidad y Datos",
+    "ai-providers": "Proveedores de IA",
+    "agent-skills": "Habilidades del Agente",
+    admin: "Administrador",
+    tools: "Herramientas",
+    "experimental-features": "Características Experimentales",
+    contact: "Contactar Soporte",
+    "browser-extension": "Extensión del Navegador",
   },
 
-  // Page Definitions
+  // Definiciones de Páginas
   login: {
     "multi-user": {
-      welcome: "Welcome to",
-      "placeholder-username": "Username",
-      "placeholder-password": "Password",
-      login: "Login",
-      validating: "Validating...",
-      "forgot-pass": "Forgot password",
-      reset: "Reset",
+      welcome: "Bienvenido a",
+      "placeholder-username": "Nombre de Usuario",
+      "placeholder-password": "Contraseña",
+      login: "Iniciar Sesión",
+      validating: "Validando...",
+      "forgot-pass": "Olvidé mi contraseña",
+      reset: "Restablecer",
     },
     "sign-in": {
-      start: "Sign in to your",
-      end: "account.",
+      start: "Inicia sesión en tu",
+      end: "cuenta.",
     },
     "password-reset": {
-      title: "Password Reset",
+      title: "Restablecimiento de Contraseña",
       description:
-        "Provide the necessary information below to reset your password.",
-      "recovery-codes": "Recovery Codes",
-      "recovery-code": "Recovery Code {{index}}",
-      "back-to-login": "Back to Login",
+        "Proporciona la información necesaria a continuación para restablecer tu contraseña.",
+      "recovery-codes": "Códigos de Recuperación",
+      "recovery-code": "Código de Recuperación {{index}}",
+      "back-to-login": "Volver al Inicio de Sesión",
     },
   },
 
   welcomeMessage: {
     part1:
-      "Welcome to AnythingLLM, AnythingLLM is an open-source AI tool by Mintplex Labs that turns anything into a trained chatbot you can query and chat with. AnythingLLM is a BYOK (bring-your-own-keys) software so there is no subscription, fee, or charges for this software outside of the services you want to use with it.",
+      "Bienvenido a AnythingLLM, AnythingLLM es una herramienta de IA de código abierto de Mintplex Labs que convierte cualquier cosa en un chatbot entrenado con el que puedes consultar y chatear. AnythingLLM es un software BYOK (trae tus propias claves) por lo que no hay suscripción, tarifa o cargos por este software fuera de los servicios que quieras usar con él.",
     part2:
-      "AnythingLLM is the easiest way to put powerful AI products like OpenAi, GPT-4, LangChain, PineconeDB, ChromaDB, and other services together in a neat package with no fuss to increase your productivity by 100x.",
+      "AnythingLLM es la forma más fácil de juntar poderosos productos de IA como OpenAI, GPT-4, LangChain, PineconeDB, ChromaDB y otros servicios en un paquete ordenado sin complicaciones para aumentar tu productividad en un 100x.",
     part3:
-      "AnythingLLM can run totally locally on your machine with little overhead you wont even notice it's there! No GPU needed. Cloud and on-premises installation is available as well.\nThe AI tooling ecosystem gets more powerful everyday. AnythingLLM makes it easy to use.",
-    githubIssue: "Create an issue on Github",
-    user1: "How do I get started?!",
+      "AnythingLLM puede funcionar totalmente de forma local en tu máquina con tan poco overhead que ni siquiera notarás que está ahí. No se necesita GPU. La instalación en la nube y en las instalaciones también está disponible.\nEl ecosistema de herramientas de IA se vuelve más poderoso cada día. AnythingLLM lo hace fácil de usar.",
+    githubIssue: "Crear un problema en Github",
+    user1: "¿Cómo empiezo?",
     part4:
-      "It's simple. All collections are organized into buckets we call \"Workspaces\". Workspaces are buckets of files, documents, images, PDFs, and other files which will be transformed into something LLM's can understand and use in conversation.\n\nYou can add and remove files at anytime.",
-    createWorkspace: "Create your first workspace",
+      "Es simple. Todas las colecciones están organizadas en cubos que llamamos \"Espacios de trabajo\". Los espacios de trabajo son cubos de archivos, documentos, imágenes, PDFs y otros archivos que se transformarán en algo que los LLM pueden entender y usar en la conversación.\n\nPuedes añadir y eliminar archivos en cualquier momento.",
+    createWorkspace: "Crea tu primer espacio de trabajo",
     user2:
-      "Is this like an AI dropbox or something? What about chatting? It is a chatbot isn't it?",
+      "¿Es esto como un Dropbox de IA o algo así? ¿Qué hay del chat? ¿Es un chatbot, no?",
     part5:
-      "AnythingLLM is more than a smarter Dropbox.\n\nAnythingLLM offers two ways of talking with your data:\n\n<i>Query:</i> Your chats will return data or inferences found with the documents in your workspace it has access to. Adding more documents to the Workspace make it smarter! \n\n<i>Conversational:</i> Your documents + your on-going chat history both contribute to the LLM knowledge at the same time. Great for appending real-time text-based info or corrections and misunderstandings the LLM might have. \n\nYou can toggle between either mode \n<i>in the middle of chatting!</i>",
-    user3: "Wow, this sounds amazing, let me try it out already!",
-    part6: "Have Fun!",
-    starOnGithub: "Star on GitHub",
-    contact: "Contact Mintplex Labs",
+      "AnythingLLM es más que un Dropbox más inteligente.\n\nAnythingLLM ofrece dos formas de hablar con tus datos:\n\n<i>Consulta:</i> Tus chats devolverán datos o inferencias encontradas con los documentos en tu espacio de trabajo a los que tiene acceso. ¡Añadir más documentos al Espacio de trabajo lo hace más inteligente! \n\n<i>Conversacional:</i> Tus documentos + tu historial de chat en curso contribuyen al conocimiento del LLM al mismo tiempo. Genial para añadir información basada en texto en tiempo real o correcciones y malentendidos que el LLM pueda tener. \n\nPuedes alternar entre cualquier modo \n<i>¡en medio de la conversación!</i>",
+    user3: "Wow, esto suena increíble, ¡déjame probarlo ya!",
+    part6: "¡Diviértete!",
+    starOnGithub: "Dale una estrella en GitHub",
+    contact: "Contacta con Mintplex Labs",
   },
 
   "new-workspace": {
@@ -93,402 +93,407 @@ const TRANSLATIONS = {
     placeholder: "My Workspace",
   },
 
-  // Workspace Settings menu items
+  // Elementos del menú de Configuración del Espacio de Trabajo
   "workspaces—settings": {
-    general: "General Settings",
-    chat: "Chat Settings",
-    vector: "Vector Database",
-    members: "Members",
-    agent: "Agent Configuration",
+    general: "Configuración General",
+    chat: "Configuración de Chat",
+    vector: "Base de Datos de Vectores",
+    members: "Miembros",
+    agent: "Configuración del Agente",
   },
 
-  // General Appearance
+  // Apariencia General
   general: {
     vector: {
-      title: "Vector Count",
-      description: "Total number of vectors in your vector database.",
+      title: "Cantidad de Vectores",
+      description: "Número total de vectores en tu base de datos de vectores.",
     },
     names: {
-      description: "This will only change the display name of your workspace.",
+      description:
+        "Esto solo cambiará el nombre de visualización de tu espacio de trabajo.",
     },
     message: {
-      title: "Suggested Chat Messages",
+      title: "Mensajes de Chat Sugeridos",
       description:
-        "Customize the messages that will be suggested to your workspace users.",
-      add: "Add new message",
-      save: "Save Messages",
-      heading: "Explain to me",
-      body: "the benefits of AnythingLLM",
+        "Personaliza los mensajes que se sugerirán a los usuarios de tu espacio de trabajo.",
+      add: "Añadir nuevo mensaje",
+      save: "Guardar Mensajes",
+      heading: "Explícame",
+      body: "los beneficios de AnythingLLM",
     },
     pfp: {
-      title: "Assistant Profile Image",
+      title: "Imagen de Perfil del Asistente",
       description:
-        "Customize the profile image of the assistant for this workspace.",
-      image: "Workspace Image",
-      remove: "Remove Workspace Image",
+        "Personaliza la imagen de perfil del asistente para este espacio de trabajo.",
+      image: "Imagen del Espacio de Trabajo",
+      remove: "Eliminar Imagen del Espacio de Trabajo",
     },
     delete: {
-      title: "Delete Workspace",
+      title: "Eliminar Espacio de Trabajo",
       description:
-        "Delete this workspace and all of its data. This will delete the workspace for all users.",
-      delete: "Delete Workspace",
-      deleting: "Deleting Workspace...",
-      "confirm-start": "You are about to delete your entire",
+        "Elimina este espacio de trabajo y todos sus datos. Esto eliminará el espacio de trabajo para todos los usuarios.",
+      delete: "Eliminar Espacio de Trabajo",
+      deleting: "Eliminando Espacio de Trabajo...",
+      "confirm-start": "Estás a punto de eliminar tu",
       "confirm-end":
-        "workspace. This will remove all vector embeddings in your vector database.\n\nThe original source files will remain untouched. This action is irreversible.",
+        "espacio de trabajo completo. Esto eliminará todas las incrustaciones de vectores en tu base de datos de vectores.\n\nLos archivos fuente originales permanecerán intactos. Esta acción es irreversible.",
     },
   },
 
-  // Chat Settings
+  // Configuración del Chat
   chat: {
     llm: {
-      title: "Workspace LLM Provider",
+      title: "Proveedor de LLM del Espacio de Trabajo",
       description:
-        "The specific LLM provider & model that will be used for this workspace. By default, it uses the system LLM provider and settings.",
-      search: "Search all LLM providers",
+        "El proveedor y modelo LLM específico que se utilizará para este espacio de trabajo. Por defecto, usa el proveedor y la configuración del sistema LLM.",
+      search: "Buscar todos los proveedores de LLM",
     },
     model: {
-      title: "Workspace Chat model",
+      title: "Modelo de Chat del Espacio de Trabajo",
       description:
-        "The specific chat model that will be used for this workspace. If empty, will use the system LLM preference.",
-      wait: "-- waiting for models --",
+        "El modelo de chat específico que se utilizará para este espacio de trabajo. Si está vacío, usará la preferencia del sistema LLM.",
+      wait: "-- esperando modelos --",
     },
     mode: {
-      title: "Chat mode",
+      title: "Modo de Chat",
       chat: {
         title: "Chat",
-        "desc-start": "will provide answers with the LLM's general knowledge",
-        and: "and",
-        "desc-end": "document context that is found.",
+        "desc-start":
+          "proporcionará respuestas con el conocimiento general del LLM",
+        and: "y",
+        "desc-end": "el contexto del documento encontrado.",
       },
       query: {
-        title: "Query",
-        "desc-start": "will provide answers",
-        only: "only",
-        "desc-end": "if document context is found.",
+        title: "Consulta",
+        "desc-start": "proporcionará respuestas",
+        only: "solo",
+        "desc-end": "si se encuentra contexto en el documento.",
       },
     },
     history: {
-      title: "Chat History",
+      title: "Historial de Chat",
       "desc-start":
-        "The number of previous chats that will be included in the response's short-term memory.",
-      recommend: "Recommend 20. ",
+        "La cantidad de chats anteriores que se incluirán en la memoria a corto plazo de la respuesta.",
+      recommend: "Recomendado 20.",
       "desc-end":
-        "Anything more than 45 is likely to lead to continuous chat failures depending on message size.",
+        "Cualquier cantidad mayor a 45 es probable que lleve a fallas continuas del chat dependiendo del tamaño del mensaje.",
     },
     prompt: {
       title: "Prompt",
       description:
-        "The prompt that will be used on this workspace. Define the context and instructions for the AI to generate a response. You should to provide a carefully crafted prompt so the AI can generate a relevant and accurate response.",
+        "El prompt que se utilizará en este espacio de trabajo. Define el contexto y las instrucciones para que la IA genere una respuesta. Debes proporcionar un prompt cuidadosamente elaborado para que la IA pueda generar una respuesta relevante y precisa.",
     },
     refusal: {
-      title: "Query mode refusal response",
-      "desc-start": "When in",
-      query: "query",
+      title: "Respuesta de rechazo en modo consulta",
+      "desc-start": "Cuando esté en modo",
+      query: "consulta",
       "desc-end":
-        "mode, you may want to return a custom refusal response when no context is found.",
+        "puedes querer devolver una respuesta de rechazo personalizada cuando no se encuentre contexto.",
     },
     temperature: {
-      title: "LLM Temperature",
+      title: "Temperatura del LLM",
       "desc-start":
-        'This setting controls how "creative" your LLM responses will be.',
+        'Esta configuración controla cuán "creativas" serán las respuestas de tu LLM.',
       "desc-end":
-        "The higher the number the more creative. For some models this can lead to incoherent responses when set too high.",
-      hint: "Most LLMs have various acceptable ranges of valid values. Consult your LLM provider for that information.",
+        "Cuanto mayor sea el número, más creativo será. Para algunos modelos, esto puede llevar a respuestas incoherentes cuando se establece demasiado alto.",
+      hint: "La mayoría de los LLMs tienen varios rangos aceptables de valores válidos. Consulta con tu proveedor de LLM para obtener esa información.",
     },
   },
 
-  // Vector Database
+  // Base de Datos de Vectores
   "vector-workspace": {
-    identifier: "Vector database identifier",
+    identifier: "Identificador de base de datos de vectores",
     snippets: {
-      title: "Max Context Snippets",
+      title: "Máximo de Fragmentos de Contexto",
       description:
-        "This setting controls the maximum amount of context snippets the will be sent to the LLM for per chat or query.",
-      recommend: "Recommended: 4",
+        "Esta configuración controla la cantidad máxima de fragmentos de contexto que se enviarán al LLM por cada chat o consulta.",
+      recommend: "Recomendado: 4",
     },
     doc: {
-      title: "Document similarity threshold",
+      title: "Umbral de similitud de documentos",
       description:
-        "The minimum similarity score required for a source to be considered related to the chat. The higher the number, the more similar the source must be to the chat.",
-      zero: "No restriction",
-      low: "Low (similarity score ≥ .25)",
-      medium: "Medium (similarity score ≥ .50)",
-      high: "High (similarity score ≥ .75)",
+        "La puntuación mínima de similitud requerida para que una fuente se considere relacionada con el chat. Cuanto mayor sea el número, más similar debe ser la fuente al chat.",
+      zero: "Sin restricción",
+      low: "Bajo (puntuación de similitud ≥ .25)",
+      medium: "Medio (puntuación de similitud ≥ .50)",
+      high: "Alto (puntuación de similitud ≥ .75)",
     },
     reset: {
-      reset: "Reset Vector Database",
-      resetting: "Clearing vectors...",
+      reset: "Restablecer base de datos de vectores",
+      resetting: "Limpiando vectores...",
       confirm:
-        "You are about to reset this workspace's vector database. This will remove all vector embeddings currently embedded.\n\nThe original source files will remain untouched. This action is irreversible.",
-      error: "Workspace vector database could not be reset!",
-      success: "Workspace vector database was reset!",
+        "Estás a punto de restablecer la base de datos de vectores de este espacio de trabajo. Esto eliminará todas las incrustaciones de vectores actualmente incrustados.\n\nLos archivos fuente originales permanecerán intactos. Esta acción es irreversible.",
+      error:
+        "¡No se pudo restablecer la base de datos de vectores del espacio de trabajo!",
+      success:
+        "¡La base de datos de vectores del espacio de trabajo fue restablecida!",
     },
   },
 
-  // Agent Configuration
+  // Configuración del Agente
   agent: {
     "performance-warning":
-      "Performance of LLMs that do not explicitly support tool-calling is highly dependent on the model's capabilities and accuracy. Some abilities may be limited or non-functional.",
+      "El rendimiento de los LLMs que no admiten explícitamente la llamada a herramientas depende en gran medida de las capacidades y la precisión del modelo. Algunas habilidades pueden ser limitadas o no funcionales.",
     provider: {
-      title: "Workspace Agent LLM Provider",
+      title: "Proveedor de LLM del Agente del Espacio de Trabajo",
       description:
-        "The specific LLM provider & model that will be used for this workspace's @agent agent.",
+        "El proveedor y modelo LLM específico que se utilizará para el agente @agent de este espacio de trabajo.",
     },
     mode: {
       chat: {
-        title: "Workspace Agent Chat model",
+        title: "Modelo de Chat del Agente del Espacio de Trabajo",
         description:
-          "The specific chat model that will be used for this workspace's @agent agent.",
+          "El modelo de chat específico que se utilizará para el agente @agent de este espacio de trabajo.",
       },
-      title: "Workspace Agent model",
+      title: "Modelo del Agente del Espacio de Trabajo",
       description:
-        "The specific LLM model that will be used for this workspace's @agent agent.",
-      wait: "-- waiting for models --",
+        "El modelo LLM específico que se utilizará para el agente @agent de este espacio de trabajo.",
+      wait: "-- esperando modelos --",
     },
 
     skill: {
-      title: "Default agent skills",
+      title: "Habilidades predeterminadas del agente",
       description:
-        "Improve the natural abilities of the default agent with these pre-built skills. This set up applies to all workspaces.",
+        "Mejora las habilidades naturales del agente predeterminado con estas habilidades preconstruidas. Esta configuración se aplica a todos los espacios de trabajo.",
       rag: {
-        title: "RAG & long-term memory",
+        title: "RAG y memoria a largo plazo",
         description:
-          'Allow the agent to leverage your local documents to answer a query or ask the agent to "remember" pieces of content for long-term memory retrieval.',
+          'Permite que el agente aproveche tus documentos locales para responder una consulta o pedirle al agente que "recuerde" piezas de contenido para la recuperación de memoria a largo plazo.',
       },
       view: {
-        title: "View & summarize documents",
+        title: "Ver y resumir documentos",
         description:
-          "Allow the agent to list and summarize the content of workspace files currently embedded.",
+          "Permite que el agente liste y resuma el contenido de los archivos del espacio de trabajo que están incrustados actualmente.",
       },
       scrape: {
-        title: "Scrape websites",
+        title: "Raspar sitios web",
         description:
-          "Allow the agent to visit and scrape the content of websites.",
+          "Permite que el agente visite y raspe el contenido de sitios web.",
       },
       generate: {
-        title: "Generate charts",
+        title: "Generar gráficos",
         description:
-          "Enable the default agent to generate various types of charts from data provided or given in chat.",
+          "Habilita al agente predeterminado para generar varios tipos de gráficos a partir de datos proporcionados o dados en el chat.",
       },
       save: {
-        title: "Generate & save files to browser",
+        title: "Generar y guardar archivos en el navegador",
         description:
-          "Enable the default agent to generate and write to files that save and can be downloaded in your browser.",
+          "Habilita al agente predeterminado para generar y escribir en archivos que se guardan y pueden ser descargados en tu navegador.",
       },
       web: {
-        title: "Live web search and browsing",
+        title: "Búsqueda y navegación web en vivo",
         "desc-start":
-          "Enable your agent to search the web to answer your questions by connecting to a web-search (SERP) provider.",
+          "Habilita a tu agente para buscar en la web y responder a tus preguntas conectándose a un proveedor de búsqueda web (SERP).",
         "desc-end":
-          "Web search during agent sessions will not work until this is set up.",
+          "La búsqueda web durante las sesiones del agente no funcionará hasta que esto esté configurado.",
       },
     },
   },
 
-  // Workspace Chats
+  // Chats del Espacio de Trabajo
   recorded: {
-    title: "Workspace Chats",
+    title: "Chats del Espacio de Trabajo",
     description:
-      "These are all the recorded chats and messages that have been sent by users ordered by their creation date.",
-    export: "Export",
+      "Estos son todos los chats y mensajes registrados que han sido enviados por usuarios ordenados por su fecha de creación.",
+    export: "Exportar",
     table: {
       id: "Id",
-      by: "Sent By",
-      workspace: "Workspace",
+      by: "Enviado por",
+      workspace: "Espacio de Trabajo",
       prompt: "Prompt",
-      response: "Response",
-      at: "Sent At",
+      response: "Respuesta",
+      at: "Enviado a",
     },
   },
 
-  // Appearance
+  // Apariencia
   appearance: {
-    title: "Appearance",
-    description: "Customize the appearance settings of your platform.",
+    title: "Apariencia",
+    description: "Personaliza la configuración de apariencia de tu plataforma.",
     logo: {
-      title: "Customize Logo",
-      description: "Upload your custom logo to make your chatbot yours.",
-      add: "Add a custom logo",
-      recommended: "Recommended size: 800 x 200",
-      remove: "Remove",
-      replace: "Replace",
+      title: "Personalizar Logotipo",
+      description: "Sube tu logotipo personalizado para hacer tu chatbot tuyo.",
+      add: "Añadir un logotipo personalizado",
+      recommended: "Tamaño recomendado: 800 x 200",
+      remove: "Eliminar",
+      replace: "Reemplazar",
     },
     message: {
-      title: "Customize Messages",
-      description: "Customize the automatic messages displayed to your users.",
-      new: "New",
-      system: "system",
-      user: "user",
-      message: "message",
-      assistant: "AnythingLLM Chat Assistant",
-      "double-click": "Double click to edit...",
-      save: "Save Messages",
+      title: "Personalizar Mensajes",
+      description:
+        "Personaliza los mensajes automáticos mostrados a tus usuarios.",
+      new: "Nuevo",
+      system: "sistema",
+      user: "usuario",
+      message: "mensaje",
+      assistant: "Asistente de Chat AnythingLLM",
+      "double-click": "Doble clic para editar...",
+      save: "Guardar Mensajes",
     },
     icons: {
-      title: "Custom Footer Icons",
+      title: "Iconos de Pie de Página Personalizados",
       description:
-        "Customize the footer icons displayed on the bottom of the sidebar.",
-      icon: "Icon",
-      link: "Link",
+        "Personaliza los iconos de pie de página mostrados en la parte inferior de la barra lateral.",
+      icon: "Icono",
+      link: "Enlace",
     },
   },
 
-  // API Keys
+  // Claves API
   api: {
-    title: "API Keys",
+    title: "Claves API",
     description:
-      "API keys allow the holder to programmatically access and manage this AnythingLLM instance.",
-    link: "Read the API documentation",
-    generate: "Generate New API Key",
+      "Las claves API permiten al titular acceder y gestionar esta instancia de AnythingLLM de manera programática.",
+    link: "Leer la documentación de la API",
+    generate: "Generar Nueva Clave API",
     table: {
-      key: "API Key",
-      by: "Created By",
-      created: "Created",
+      key: "Clave API",
+      by: "Creado por",
+      created: "Creado",
     },
   },
 
   llm: {
-    title: "LLM Preference",
+    title: "Preferencia de LLM",
     description:
-      "These are the credentials and settings for your preferred LLM chat & embedding provider. Its important these keys are current and correct or else AnythingLLM will not function properly.",
-    provider: "LLM Provider",
+      "Estas son las credenciales y configuraciones para tu proveedor preferido de chat y embedding de LLM. Es importante que estas claves estén actualizadas y correctas para que AnythingLLM funcione correctamente.",
+    provider: "Proveedor de LLM",
   },
 
   transcription: {
-    title: "Transcription Model Preference",
+    title: "Preferencia del Modelo de Transcripción",
     description:
-      "These are the credentials and settings for your preferred transcription model provider. Its important these keys are current and correct or else media files and audio will not transcribe.",
-    provider: "Transcription Provider",
+      "Estas son las credenciales y configuraciones para tu proveedor preferido de modelo de transcripción. Es importante que estas claves estén actualizadas y correctas o de lo contrario los archivos multimedia y de audio no se transcribirán.",
+    provider: "Proveedor de Transcripción",
     "warn-start":
-      "Using the local whisper model on machines with limited RAM or CPU can stall AnythingLLM when processing media files.",
+      "Usar el modelo local de whisper en máquinas con poca RAM o CPU puede hacer que AnythingLLM se detenga al procesar archivos multimedia.",
     "warn-recommend":
-      "We recommend at least 2GB of RAM and upload files <10Mb.",
+      "Recomendamos al menos 2GB de RAM y subir archivos <10Mb.",
     "warn-end":
-      "The built-in model will automatically download on the first use.",
+      "El modelo incorporado se descargará automáticamente en el primer uso.",
   },
 
   embedding: {
-    title: "Embedding Preference",
+    title: "Preferencia de Embedding",
     "desc-start":
-      "When using an LLM that does not natively support an embedding engine - you may need to additionally specify credentials to for embedding text.",
+      "Cuando uses un LLM que no soporta de forma nativa un motor de embedding, es posible que necesites especificar credenciales adicionales para hacer embedding de texto.",
     "desc-end":
-      "Embedding is the process of turning text into vectors. These credentials are required to turn your files and prompts into a format which AnythingLLM can use to process.",
+      "Embedding es el proceso de convertir texto en vectores. Estas credenciales son necesarias para convertir tus archivos y prompts en un formato que AnythingLLM pueda usar para procesar.",
     provider: {
-      title: "Embedding Provider",
+      title: "Proveedor de Embedding",
       description:
-        "There is no set up required when using AnythingLLM's native embedding engine.",
+        "No se requiere configuración cuando se usa el motor de embedding nativo de AnythingLLM.",
     },
   },
 
   text: {
-    title: "Text splitting & Chunking Preferences",
+    title: "Preferencias de División y Fragmentación de Texto",
     "desc-start":
-      "Sometimes, you may want to change the default way that new documents are split and chunked before being inserted into your vector database.",
+      "A veces, es posible que desees cambiar la forma predeterminada en que los nuevos documentos se dividen y fragmentan antes de insertarlos en tu base de datos de vectores.",
     "desc-end":
-      "You should only modify this setting if you understand how text splitting works and it's side effects.",
-    "warn-start": "Changes here will only apply to",
-    "warn-center": "newly embedded documents",
-    "warn-end": ", not existing documents.",
+      "Solo debes modificar esta configuración si entiendes cómo funciona la división de texto y sus efectos secundarios.",
+    "warn-start": "Los cambios aquí solo se aplicarán a",
+    "warn-center": "nuevos documentos incrustados",
+    "warn-end": ", no a documentos existentes.",
     size: {
-      title: "Text Chunk Size",
+      title: "Tamaño de Fragmento de Texto",
       description:
-        "This is the maximum length of characters that can be present in a single vector.",
-      recommend: "Embed model maximum length is",
+        "Esta es la longitud máxima de caracteres que pueden estar presentes en un solo vector.",
+      recommend: "La longitud máxima del modelo de embedding es",
     },
 
     overlap: {
-      title: "Text Chunk Overlap",
+      title: "Superposición de Fragmentos de Texto",
       description:
-        "This is the maximum overlap of characters that occurs during chunking between two adjacent text chunks.",
+        "Esta es la superposición máxima de caracteres que ocurre durante la fragmentación entre dos fragmentos de texto adyacentes.",
     },
   },
 
-  // Vector Database
+  // Base de Datos de Vectores
   vector: {
-    title: "Vector Database",
+    title: "Base de Datos de Vectores",
     description:
-      "These are the credentials and settings for how your AnythingLLM instance will function. It's important these keys are current and correct.",
+      "Estas son las credenciales y configuraciones para el funcionamiento de tu instancia de AnythingLLM. Es importante que estas claves estén actualizadas y correctas.",
     provider: {
-      title: "Vector Database Provider",
-      description: "There is no configuration needed for LanceDB.",
+      title: "Proveedor de Base de Datos de Vectores",
+      description: "No se necesita configuración para LanceDB.",
     },
   },
 
-  // Embeddable Chat Widgets
+  // Widgets de Chat Insertables
   embeddable: {
-    title: "Embeddable Chat Widgets",
+    title: "Widgets de Chat Insertables",
     description:
-      "Embeddable chat widgets are public facing chat interfaces that are tied to a single workspace. These allow you to build workspaces that then you can publish to the world.",
-    create: "Create embed",
+      "Los widgets de chat insertables son interfaces de chat públicas que están vinculadas a un solo espacio de trabajo. Estos te permiten construir espacios de trabajo que luego puedes publicar al mundo.",
+    create: "Crear inserción",
     table: {
-      workspace: "Workspace",
-      chats: "Sent Chats",
-      Active: "Active Domains",
+      workspace: "Espacio de Trabajo",
+      chats: "Chats Enviados",
+      Active: "Dominios Activos",
     },
   },
 
   "embed-chats": {
-    title: "Embed Chats",
-    export: "Export",
+    title: "Chats embebidos",
+    export: "Exportar",
     description:
-      "These are all the recorded chats and messages from any embed that you have published.",
+      "Estos son todos los chats y mensajes registrados de cualquier inserción que hayas publicado.",
     table: {
-      embed: "Embed",
-      sender: "Sender",
-      message: "Message",
-      response: "Response",
-      at: "Sent At",
+      embed: "Inserción",
+      sender: "Remitente",
+      message: "Mensaje",
+      response: "Respuesta",
+      at: "Enviado a",
     },
   },
 
   multi: {
-    title: "Multi-User Mode",
+    title: "Modo Multiusuario",
     description:
-      "Set up your instance to support your team by activating Multi-User Mode.",
+      "Configura tu instancia para admitir a tu equipo activando el Modo Multiusuario.",
     enable: {
-      "is-enable": "Multi-User Mode is Enabled",
-      enable: "Enable Multi-User Mode",
+      "is-enable": "El Modo Multiusuario está Habilitado",
+      enable: "Habilitar Modo Multiusuario",
       description:
-        "By default, you will be the only admin. As an admin you will need to create accounts for all new users or admins. Do not lose your password as only an Admin user can reset passwords.",
-      username: "Admin account username",
-      password: "Admin account password",
+        "Por defecto, solo serás el único administrador. Como administrador, necesitarás crear cuentas para todos los nuevos usuarios o administradores. No pierdas tu contraseña, ya que solo un usuario administrador puede restablecer las contraseñas.",
+      username: "Nombre de usuario de la cuenta de administrador",
+      password: "Contraseña de la cuenta de administrador",
     },
     password: {
-      title: "Password Protection",
+      title: "Protección con Contraseña",
       description:
-        "Protect your AnythingLLM instance with a password. If you forget this there is no recovery method so ensure you save this password.",
+        "Protege tu instancia de AnythingLLM con una contraseña. Si olvidas esto, no hay método de recuperación, así que asegúrate de guardar esta contraseña.",
     },
     instance: {
-      title: "Password Protect Instance",
+      title: "Proteger Instancia con Contraseña",
       description:
-        "By default, you will be the only admin. As an admin you will need to create accounts for all new users or admins. Do not lose your password as only an Admin user can reset passwords.",
-      password: "Instance password",
+        "Por defecto, solo serás el único administrador. Como administrador, necesitarás crear cuentas para todos los nuevos usuarios o administradores. No pierdas tu contraseña, ya que solo un usuario administrador puede restablecer las contraseñas.",
+      password: "Contraseña de la instancia",
     },
   },
 
-  // Event Logs
+  // Registros de Eventos
   event: {
-    title: "Event Logs",
+    title: "Registros de Eventos",
     description:
-      "View all actions and events happening on this instance for monitoring.",
-    clear: "Clear Event Logs",
+      "Ver todas las acciones y eventos que ocurren en esta instancia para su monitoreo.",
+    clear: "Borrar Registros de Eventos",
     table: {
-      type: "Event Type",
-      user: "User",
-      occurred: "Occurred At",
+      type: "Tipo de Evento",
+      user: "Usuario",
+      occurred: "Ocurrido a",
     },
   },
 
-  // Privacy & Data-Handling
+  // Privacidad y Manejo de Datos
   privacy: {
-    title: "Privacy & Data-Handling",
+    title: "Privacidad y Manejo de Datos",
     description:
-      "This is your configuration for how connected third party providers and AnythingLLM handle your data.",
-    llm: "LLM Selection",
-    embedding: "Embedding Preference",
-    vector: "Vector Database",
-    anonymous: "Anonymous Telemetry Enabled",
+      "Esta es tu configuración para cómo los proveedores de terceros conectados y AnythingLLM manejan tus datos.",
+    llm: "Selección de LLM",
+    embedding: "Preferencia de Embedding",
+    vector: "Base de Datos de Vectores",
+    anonymous: "Telemetría Anónima Habilitada",
   },
 };
 

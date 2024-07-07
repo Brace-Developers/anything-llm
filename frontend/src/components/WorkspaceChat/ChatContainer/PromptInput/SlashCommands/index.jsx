@@ -10,7 +10,7 @@ export default function SlashCommandsButton({ showing, setShowSlashCommand }) {
     <div
       id="slash-cmd-btn"
       data-tooltip-id="tooltip-slash-cmd-btn"
-      data-tooltip-content="View all available slash commands for chatting."
+      data-tooltip-content="Ver todos los comandos de barra disponibles para chatear."
       onClick={() => setShowSlashCommand(!showing)}
       className={`flex justify-center items-center opacity-60 hover:opacity-100 cursor-pointer ${
         showing ? "!opacity-100" : ""

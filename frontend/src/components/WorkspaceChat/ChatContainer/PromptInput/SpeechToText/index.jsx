@@ -95,8 +95,8 @@ export default function SpeechToText({ sendCommand }) {
     <div
       id="text-size-btn"
       data-tooltip-id="tooltip-text-size-btn"
-      data-tooltip-content="Speak your prompt"
-      aria-label="Speak your prompt"
+      data-tooltip-content="Graba tu mensaje"
+      aria-label="Graba tu mensaje"
       onClick={listening ? endTTSSession : startSTTSession}
       className={`relative flex justify-center items-center opacity-60 hover:opacity-100 cursor-pointer ${
         !!listening ? "!opacity-100" : ""

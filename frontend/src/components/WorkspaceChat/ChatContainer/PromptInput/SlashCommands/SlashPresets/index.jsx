@@ -35,7 +35,7 @@ export default function SlashPresets({ setShowing, sendCommand }) {
 
   const handleSavePreset = async (preset) => {
     const { error } = await System.createSlashCommandPreset(preset);
-    if (!!error) {
+    if (error) {
       showToast(error, "error");
       return false;
     }
@@ -56,7 +56,7 @@ export default function SlashPresets({ setShowing, sendCommand }) {
       updatedPreset
     );
 
-    if (!!error) {
+    if (error) {
       showToast(error, "error");
       return;
     }
@@ -110,7 +110,9 @@ export default function SlashPresets({ setShowing, sendCommand }) {
       >
         <div className="w-full flex-row flex pointer-events-none items-center gap-2">
           <Plus size={24} weight="fill" fill="white" />
-          <div className="text-white text-sm font-medium">Add New Preset </div>
+          <div className="text-white text-sm font-medium">
+            Agregar nuevo Preset{" "}
+          </div>
         </div>
       </button>
       <AddPresetModal

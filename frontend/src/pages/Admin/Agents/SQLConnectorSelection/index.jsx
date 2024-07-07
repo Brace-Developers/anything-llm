@@ -100,7 +100,7 @@ export default function AgentSQLConnectorSelection({
                         />
                       </div>
                       <p className="text-left text-slate-100 text-sm">
-                        New SQL connection
+                        Nueva conexión SQL
                       </p>
                     </div>
                   </button>

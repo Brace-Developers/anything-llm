@@ -15,7 +15,7 @@ export default function ResetCommand({ setShowing, sendCommand }) {
       <div className="w-full flex-col text-left flex pointer-events-none">
         <div className="text-white text-sm font-bold">/reset</div>
         <div className="text-white text-opacity-60 text-sm">
-          Clear your chat history and begin a new chat
+          Limpiar tu historial de chat y comenzar un nuevo
         </div>
       </div>
     </button>

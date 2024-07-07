@@ -169,22 +169,23 @@ export default function ChatHistory({
       <div className="flex flex-col h-full md:mt-0 pb-44 md:pb-40 w-full justify-end items-center">
         <div className="flex flex-col items-center md:items-start md:max-w-[600px] w-full px-4">
           <p className="text-white/60 text-lg font-base py-4">
-            Welcome to your new workspace.
+            Bienvenido a tu nuevo espacio de trabajo.
           </p>
           {!user || user.role !== "default" ? (
             <p className="w-full items-center text-white/60 text-lg font-base flex flex-col md:flex-row gap-x-1">
-              To get started either{" "}
+              Para comenzar,{" "}
               <span
                 className="underline font-medium cursor-pointer"
                 onClick={showModal}
               >
-                upload a document
+                sube un documento
               </span>
-              or <b className="font-medium italic">send a chat.</b>
+              o <b className="font-medium italic">envía un mensaje.</b>
             </p>
           ) : (
             <p className="w-full items-center text-white/60 text-lg font-base flex flex-col md:flex-row gap-x-1">
-              To get started <b className="font-medium italic">send a chat.</b>
+              Para comenzar{" "}
+              <b className="font-medium italic">envía un mensaje.</b>
             </p>
           )}
           <WorkspaceChatSuggestions

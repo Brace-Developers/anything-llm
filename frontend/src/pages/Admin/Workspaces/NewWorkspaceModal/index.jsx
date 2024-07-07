@@ -20,7 +20,7 @@ export default function NewWorkspaceModal({ closeModal }) {
       <div className="relative bg-main-gradient rounded-lg shadow">
         <div className="flex items-start justify-between p-4 border-b rounded-t border-gray-600">
           <h3 className="text-xl font-semibold text-white">
-            Create new workspace
+            Crea un nuevo espacio de trabajo
           </h3>
           <button
             onClick={closeModal}
@@ -45,7 +45,7 @@ export default function NewWorkspaceModal({ closeModal }) {
                   name="name"
                   type="text"
                   className="bg-zinc-900 placeholder:text-white/20 border-gray-500 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                  placeholder="My workspace"
+                  placeholder="Mi espacio de trabajo"
                   minLength={4}
                   required={true}
                   autoComplete="off"

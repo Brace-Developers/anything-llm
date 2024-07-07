@@ -63,7 +63,7 @@ export default function DataConnectors() {
           />
           <input
             type="text"
-            placeholder="Search data connectors"
+            placeholder="Buscar conectores de datos"
             className="border-none bg-zinc-600 z-20 pl-10 h-[38px] rounded-full w-full px-4 py-1 text-sm border-2 border-slate-300/40 outline-none focus:outline-primary-button active:outline-primary-button outline-none text-white"
             autoComplete="off"
             value={searchQuery}

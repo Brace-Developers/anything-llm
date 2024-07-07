@@ -95,7 +95,7 @@ function WorkspaceDirectory({
           <div className="text-white/80 text-xs grid grid-cols-12 py-2 px-3.5 border-b border-white/20 bg-zinc-900 sticky top-0 z-10 rounded-t-2xl">
             <div className="col-span-10 flex items-center gap-x-[4px]">
               <div className="shrink-0 w-3 h-3" />
-              <p className="ml-[7px]">Name</p>
+              <p className="ml-[7px]">Nombre</p>
             </div>
             <p className="col-span-2" />
           </div>
@@ -120,15 +120,14 @@ function WorkspaceDirectory({
         </div>
         <div className="relative w-[560px] h-[445px] mt-5">
           <div
-            className={`absolute inset-0 rounded-2xl  ${
-              highlightWorkspace ? "border-4 border-cyan-300/80 z-[999]" : ""
-            }`}
+            className={`absolute inset-0 rounded-2xl  ${highlightWorkspace ? "border-4 border-cyan-300/80 z-[999]" : ""
+              }`}
           />
           <div className="relative w-full h-full bg-zinc-900 rounded-2xl overflow-hidden">
             <div className="text-white/80 text-xs grid grid-cols-12 py-2 px-3.5 border-b border-white/20 bg-zinc-900 sticky top-0 z-10">
               <div className="col-span-10 flex items-center gap-x-[4px]">
                 {!hasChanges &&
-                files.items.some((folder) => folder.items.length > 0) ? (
+                  files.items.some((folder) => folder.items.length > 0) ? (
                   <div
                     className="shrink-0 w-3 h-3 rounded border-[1px] border-white flex justify-center items-center cursor-pointer"
                     role="checkbox"
@@ -157,7 +156,7 @@ function WorkspaceDirectory({
             </div>
             <div className="overflow-y-auto h-[calc(100%-40px)]">
               {files.items.some((folder) => folder.items.length > 0) ||
-              movedItems.length > 0 ? (
+                movedItems.length > 0 ? (
                 <RenderFileRows files={files} movedItems={movedItems}>
                   {({ item, folder }) => (
                     <WorkspaceFileRow
@@ -180,7 +179,7 @@ function WorkspaceDirectory({
               ) : (
                 <div className="w-full h-full flex items-center justify-center">
                   <p className="text-white text-opacity-40 text-sm font-medium">
-                    No Documents
+                    Sin documentos
                   </p>
                 </div>
               )}
@@ -194,10 +193,10 @@ function WorkspaceDirectory({
                       className="border-none text-sm font-semibold bg-white h-[30px] px-2.5 rounded-lg hover:text-white hover:bg-neutral-800/80"
                     >
                       {Object.keys(selectedItems).length ===
-                      files.items.reduce(
-                        (sum, folder) => sum + folder.items.length,
-                        0
-                      )
+                        files.items.reduce(
+                          (sum, folder) => sum + folder.items.length,
+                          0
+                        )
                         ? "Deselect All"
                         : "Select All"}
                     </button>
@@ -205,7 +204,7 @@ function WorkspaceDirectory({
                       onClick={removeSelectedItems}
                       className="border-none text-sm font-semibold bg-white h-[30px] px-2.5 rounded-lg hover:text-white hover:bg-neutral-800/80"
                     >
-                      Remove Selected
+                      Quitar los seleccionados
                     </button>
                   </div>
                 </div>
@@ -219,11 +218,10 @@ function WorkspaceDirectory({
               <p className="text-sm font-semibold">
                 {embeddingCosts === 0
                   ? ""
-                  : `Estimated Cost: ${
-                      embeddingCosts < 0.01
-                        ? `< $0.01`
-                        : dollarFormat(embeddingCosts)
-                    }`}
+                  : `Estimated Cost: ${embeddingCosts < 0.01
+                    ? `< $0.01`
+                    : dollarFormat(embeddingCosts)
+                  }`}
               </p>
               <p className="mt-2 text-xs italic" hidden={embeddingCosts === 0}>
                 *One time cost for embeddings
@@ -234,7 +232,7 @@ function WorkspaceDirectory({
               onClick={(e) => handleSaveChanges(e)}
               className="border border-slate-200 px-5 py-2.5 rounded-lg text-white text-sm items-center flex gap-x-2 hover:bg-slate-200 hover:text-slate-800 focus:ring-gray-800"
             >
-              Save and Embed
+              Guardar y embeber
             </button>
           </div>
         )}
@@ -254,7 +252,7 @@ const PinAlert = memo(() => {
   }
 
   function handlePinEvent() {
-    if (!!window?.localStorage?.getItem(SEEN_DOC_PIN_ALERT)) return;
+    if (window?.localStorage?.getItem(SEEN_DOC_PIN_ALERT)) return;
     setShowAlert(true);
   }
 
@@ -316,7 +314,7 @@ const DocumentWatchAlert = memo(() => {
   }
 
   function handlePinEvent() {
-    if (!!window?.localStorage?.getItem(SEEN_WATCH_ALERT)) return;
+    if (window?.localStorage?.getItem(SEEN_WATCH_ALERT)) return;
     setShowAlert(true);
   }
 
