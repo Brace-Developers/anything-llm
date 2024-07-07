@@ -39,21 +39,20 @@ const HistoricalMessage = ({
     element.style.height = element.scrollHeight + "px";
   };
 
-  if (!!error) {
+  if (error) {
     return (
       <div
         key={uuid}
-        className={`flex justify-center items-end w-full ${
-          role === "user" ? USER_BACKGROUND_COLOR : AI_BACKGROUND_COLOR
-        }`}
+        className={`flex justify-center items-end w-full ${role === "user" ? USER_BACKGROUND_COLOR : AI_BACKGROUND_COLOR
+          }`}
       >
         <div className="py-8 px-4 w-full flex gap-x-5 md:max-w-[80%] flex-col">
           <div className="flex gap-x-5">
             <ProfileImage role={role} workspace={workspace} />
             <div className="p-2 rounded-lg bg-red-50 text-red-500">
               <span className="inline-block">
-                <Warning className="h-4 w-4 mb-1 inline-block" /> Could not
-                respond to message.
+                <Warning className="h-4 w-4 mb-1 inline-block" />
+                No se pudo responder al mensaje.
               </span>
               <p className="text-xs font-mono mt-2 border-l-2 border-red-300 pl-2 bg-red-200 p-2 rounded-sm">
                 {error}
@@ -70,13 +69,11 @@ const HistoricalMessage = ({
     <div
       key={uuid}
       onAnimationEnd={onEndAnimation}
-      className={`${
-        isDeleted ? "animate-remove" : ""
-      } flex justify-center items-end w-full group ${
-        role === "user" ? USER_BACKGROUND_COLOR : AI_BACKGROUND_COLOR
-      }`}
+      className={`${isDeleted ? "animate-remove" : ""
+        } flex justify-center items-end w-full group ${role === "user" ? USER_BACKGROUND_COLOR : AI_BACKGROUND_COLOR
+        }`}
     >
-      <div className="py-8 px-4 w-full flex gap-x-5 md:max-w-[80%] flex-col">
+      <div className="py-8 px-4 w-full flex gap-x-5 md:max-w-[80%] flex-col text-black">
         <div className="flex gap-x-5">
           <div className="flex flex-col items-center">
             <ProfileImage role={role} workspace={workspace} />

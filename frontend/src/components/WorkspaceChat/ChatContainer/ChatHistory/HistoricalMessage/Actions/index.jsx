@@ -47,7 +47,7 @@ const Actions = ({
               isSelected={selectedFeedback === true}
               handleFeedback={() => handleFeedback(true)}
               tooltipId={`${chatId}-thumbs-up`}
-              tooltipContent="Good response"
+              tooltipContent="Buena respuesta"
               IconComponent={ThumbsUp}
             />
           )}

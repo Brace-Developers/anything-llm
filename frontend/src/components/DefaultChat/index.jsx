@@ -51,7 +51,7 @@ export default function DefaultChatContainer() {
             <UserIcon user={{ uid: "system" }} role={"assistant"} />
 
             <span
-              className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
+              className={`whitespace-pre-line text-black font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
             >
               {t("welcomeMessage.part1")}
             </span>
@@ -71,7 +71,7 @@ export default function DefaultChatContainer() {
             <UserIcon user={{ uid: "system" }} role={"assistant"} />
 
             <span
-              className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
+              className={`whitespace-pre-line text-black font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
             >
               {t("welcomeMessage.part2")}
             </span>
@@ -124,7 +124,7 @@ export default function DefaultChatContainer() {
             />
 
             <span
-              className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
+              className={`whitespace-pre-line text-black font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
             >
               {t("welcomeMessage.user1")}
             </span>
@@ -144,7 +144,7 @@ export default function DefaultChatContainer() {
             <UserIcon user={{ uid: "system" }} role={"assistant"} />
             <div>
               <span
-                className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
+                className={`whitespace-pre-line text-black font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
               >
                 {t("welcomeMessage.part4")}
               </span>
@@ -152,7 +152,7 @@ export default function DefaultChatContainer() {
               {(!user || user?.role !== "default") && (
                 <button
                   onClick={showNewWsModal}
-                  className="mt-5 w-fit transition-all duration-300 border border-slate-200 px-4 py-2 rounded-lg text-white text-sm items-center flex gap-x-2 hover:bg-slate-200 hover:text-slate-800 focus:ring-gray-800"
+                  className="bg-primary-button mt-5 w-fit transition-all duration-300 border border-slate-200 px-4 py-2 rounded-lg text-white text-sm items-center flex gap-x-2 hover:bg-slate-200 hover:text-slate-800 focus:ring-gray-800"
                 >
                   <Plus className="h-4 w-4" />
                   <p>{t("welcomeMessage.createWorkspace")}</p>
@@ -178,7 +178,7 @@ export default function DefaultChatContainer() {
             />
 
             <span
-              className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
+              className={`whitespace-pre-line text-black font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
             >
               {t("welcomeMessage.user2")}
             </span>
@@ -198,7 +198,7 @@ export default function DefaultChatContainer() {
             <UserIcon user={{ uid: "system" }} role={"assistant"} />
 
             <span
-              className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
+              className={`whitespace-pre-line text-black font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
             >
               <Trans
                 i18nKey="welcomeMessage.part5"
@@ -227,7 +227,7 @@ export default function DefaultChatContainer() {
             />
 
             <span
-              className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
+              className={`whitespace-pre-line text-black font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
             >
               {t("welcomeMessage.user3")}
             </span>
@@ -247,7 +247,7 @@ export default function DefaultChatContainer() {
             <UserIcon user={{ uid: "system" }} role={"assistant"} />
             <div>
               <span
-                className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
+                className={`whitespace-pre-line text-black font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
               >
                 {t("welcomeMessage.part6")}
               </span>
@@ -305,7 +305,7 @@ export default function DefaultChatContainer() {
   return (
     <div
       style={{ height: isMobile ? "100%" : "calc(100% - 32px)" }}
-      className="transition-all duration-500 relative md:ml-[2px] md:mr-[16px] md:my-[16px] md:rounded-[16px] bg-main-gradient w-full h-full overflow-y-scroll border-2 border-outline"
+      className="transition-all duration-500 relative md:ml-[2px] md:mr-[16px] md:my-[16px] md:rounded-[16px] bg-white w-full h-full overflow-y-scroll border-2 border-outline"
     >
       {isMobile && <SidebarMobileHeader />}
       {fetchedMessages.length === 0

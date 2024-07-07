@@ -35,7 +35,7 @@ export default function SettingsButton() {
         className="transition-all duration-300 p-2 rounded-full text-white bg-sidebar-button hover:bg-menu-item-selected-gradient hover:border-slate-100 hover:border-opacity-50 border-transparent border"
         aria-label="Settings"
         data-tooltip-id="open-settings"
-        data-tooltip-content="Open settings"
+        data-tooltip-content="Abrir ajustes"
       >
         <Wrench className="h-5 w-5" weight="fill" />
       </Link>

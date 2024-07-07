@@ -166,7 +166,7 @@ export default function ChatHistory({
 
   if (history.length === 0 && !hasAttachments) {
     return (
-      <div className="flex flex-col h-full md:mt-0 pb-44 md:pb-40 w-full justify-end items-center">
+      <div className="flex flex-col h-full md:mt-0 pb-44 md:pb-40 w-full justify-end items-center bg-white">
         <div className="flex flex-col items-center md:items-start md:max-w-[600px] w-full px-4">
           <p className="text-white/60 text-lg font-base py-4">
             Bienvenido a tu nuevo espacio de trabajo.

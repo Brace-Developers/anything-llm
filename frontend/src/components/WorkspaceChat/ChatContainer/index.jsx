@@ -150,7 +150,7 @@ export default function ChatContainer({ workspace, knownHistory = [] }) {
       var _chatHistory = [...remHistory];
 
       // Override hook for new messages to now go to agents until the connection closes
-      if (!!websocket) {
+      if (websocket) {
         if (!promptMessage || !promptMessage?.userMessage) return false;
         websocket.send(
           JSON.stringify({
@@ -263,7 +263,7 @@ export default function ChatContainer({ workspace, knownHistory = [] }) {
   return (
     <div
       style={{ height: isMobile ? "100%" : "calc(100% - 32px)" }}
-      className="transition-all duration-500 relative md:ml-[2px] md:mr-[16px] md:my-[16px] md:rounded-[16px] bg-main-gradient w-full h-full overflow-y-scroll border-2 border-outline no-scroll"
+      className="transition-all duration-500 relative md:ml-[2px] md:mr-[16px] md:my-[16px] md:rounded-[16px] bg-white w-full h-full overflow-y-scroll border-2 border-outline no-scroll"
     >
       {isMobile && <SidebarMobileHeader />}
       <DnDFileUploaderWrapper>
