@@ -12,11 +12,10 @@ export default function LanguagePreference() {
     <>
       <div className="flex flex-col gap-y-1">
         <h2 className="text-base leading-6 font-bold text-white">
-          Display Language
+          Idioma de la interfaz
         </h2>
         <p className="text-xs leading-[18px] font-base text-white/60">
-          Select the preferred language to render AnythingLLM's UI in, when
-          applicable.
+          Selecciona el idioma preferido para mostrar la interfaz de AnythingLLM,
         </p>
       </div>
       <div className="flex items-center gap-x-4">

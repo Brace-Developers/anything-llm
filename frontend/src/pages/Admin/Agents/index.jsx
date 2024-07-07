@@ -147,7 +147,7 @@ export default function AdminAgents() {
           <div hidden={showSkillModal} className="flex flex-col gap-y-[18px]">
             <div className="text-white flex items-center gap-x-2">
               <Robot size={24} />
-              <p className="text-lg font-medium">Agent Skills</p>
+              <p className="text-lg font-medium">Habilidades del Agente</p>
             </div>
             {/* Default skills */}
             <SkillList
@@ -262,7 +262,7 @@ export default function AdminAgents() {
         <div className="flex flex-col gap-y-[18px]">
           <div className="text-white flex items-center gap-x-2">
             <Robot size={24} />
-            <p className="text-lg font-medium">Agent Skills</p>
+            <p className="text-lg font-medium">Habilidades del Agente</p>
           </div>
 
           {/* Default skills list */}
