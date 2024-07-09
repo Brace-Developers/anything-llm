@@ -233,7 +233,7 @@ function OptionsMenu({ containerRef, workspace, thread, onRemove, close }) {
         className="w-full rounded-md flex items-center p-2 gap-x-2 hover:bg-slate-500/20 text-slate-300"
       >
         <PencilSimple size={18} />
-        <p className="text-sm">Rename</p>
+        <p className="text-sm">Renombrar</p>
       </button>
       <button
         onClick={handleDelete}
@@ -241,7 +241,7 @@ function OptionsMenu({ containerRef, workspace, thread, onRemove, close }) {
         className="w-full rounded-md flex items-center p-2 gap-x-2 hover:bg-red-500/20 text-slate-300 hover:text-red-100"
       >
         <Trash size={18} />
-        <p className="text-sm">Delete Thread</p>
+        <p className="text-sm">Eliminar hilo</p>
       </button>
     </div>
   );
