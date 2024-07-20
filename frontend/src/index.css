@@ -470,6 +470,7 @@ dialog::backdrop {
   line-height: 1.4;
   font-size: large;
   padding-left: 0.3rem;
+  font-weight: bold;
 }
 
 /* Table Styles */
@@ -490,7 +491,7 @@ dialog::backdrop {
 .markdown table {
   width: 100%;
   border-collapse: collapse;
-  color: #bdbdbe;
+  color: black;
   font-size: 13px;
   margin: 30px 0px;
   border-radius: 10px;
@@ -499,7 +500,7 @@ dialog::backdrop {
 }
 
 .markdown table thead {
-  color: #fff;
+  color: black;
   text-transform: uppercase;
   font-weight: bolder;
 }
@@ -513,12 +514,13 @@ dialog::backdrop {
 .markdown table th,
 .markdown table td {
   padding: 8px 15px;
-  border-bottom: 1px solid #cdcdcd2e;
+  border-bottom: 1px solid #b3b3b3;
   text-align: left;
 }
 
 .markdown table th {
   padding: 14px 15px;
+  color: black;
 }
 
 @media (max-width: 600px) {
@@ -612,7 +614,7 @@ dialog::backdrop {
 
 .markdown strong {
   font-weight: 600;
-  color: #fff;
+  color: black;
 }
 
 .file-row:nth-child(even) {

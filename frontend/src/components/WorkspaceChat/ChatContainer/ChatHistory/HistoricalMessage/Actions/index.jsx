@@ -76,7 +76,7 @@ function FeedbackButton({
         onClick={handleFeedback}
         data-tooltip-id={tooltipId}
         data-tooltip-content={tooltipContent}
-        className="text-zinc-300"
+        className="text-gray-500"
         aria-label={tooltipContent}
       >
         <IconComponent
@@ -105,7 +105,7 @@ function CopyMessage({ message }) {
           onClick={() => copyText(message)}
           data-tooltip-id="copy-assistant-text"
           data-tooltip-content="Copiar"
-          className="text-zinc-300"
+          className="text-gray-500"
           aria-label="Copiar"
         >
           {copied ? (
@@ -133,7 +133,7 @@ function RegenerateMessage({ regenerateMessage, chatId }) {
         onClick={() => regenerateMessage(chatId)}
         data-tooltip-id="regenerate-assistant-text"
         data-tooltip-content="Regenerate response"
-        className="border-none text-zinc-300"
+        className="border-none text-gray-500"
         aria-label="Regenerate"
       >
         <ArrowsClockwise size={20} className="mb-1" weight="fill" />
