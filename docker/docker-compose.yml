@@ -1,4 +1,4 @@
-name: anythingllmbrace
+name: anythingllm
 
 networks:
   anything-llm:
