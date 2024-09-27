@@ -1,4 +1,4 @@
-name: anythingllm-brace-athenea
+name: anythingllmBraceAthenea
 
 networks:
   anything-llm:
