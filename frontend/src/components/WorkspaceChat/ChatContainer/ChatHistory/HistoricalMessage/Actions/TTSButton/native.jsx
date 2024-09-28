@@ -45,7 +45,7 @@ export default function NativeTTSMessage({ message }) {
         aria-label={speaking ? "Pause speech" : "Speak message"}
       >
         {speaking ? (
-          <PauseCircle size={18} className="mb-1" />
+          <PauseCircle size={18} className="mb-1 fill-black" />
         ) : (
           <SpeakerHigh size={18} className="mb-1 fill-black" />
         )}

@@ -110,7 +110,7 @@ export function EditMessageForm({
           type="submit"
           className="px-2 py-1 bg-gray-200 text-gray-700 font-medium rounded-md mr-2 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
         >
-          Save & Submit
+          Guardar y Enviar
         </button>
         <button
           type="button"

@@ -97,7 +97,7 @@ const HistoricalMessage = ({
           ) : (
             <div className="overflow-x-scroll break-words no-scroll">
               <span
-                className="flex flex-col gap-y-1 text-black"
+                className="flex flex-col gap-y-1 text-black pl-2"
                 dangerouslySetInnerHTML={{
                   __html: DOMPurify.sanitize(renderMarkdown(message)),
                 }}

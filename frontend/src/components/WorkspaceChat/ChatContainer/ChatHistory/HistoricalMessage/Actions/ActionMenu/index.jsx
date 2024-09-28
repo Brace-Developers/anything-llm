@@ -50,7 +50,7 @@ function ActionMenu({ chatId, forkThread, isEditing, role }) {
         data-tooltip-content="Más acciones"
         aria-label="More actions"
       >
-        <DotsThreeVertical size={24} weight="bold" />
+        <DotsThreeVertical size={24} weight="bold" className="fill-black" />
       </button>
       {open && (
         <div className="absolute -top-1 left-7 mt-1 border-[1.5px] border-white/40 rounded-lg bg-[#41454B] bg-opacity-100 flex flex-col shadow-[0_4px_14px_rgba(0,0,0,0.25)] text-white z-99 md:z-10">
