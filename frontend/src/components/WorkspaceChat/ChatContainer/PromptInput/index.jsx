@@ -41,8 +41,7 @@ export default function PromptInput({
   }
 
   useEffect(() => {
-    if (!!window)
-      window.addEventListener(PROMPT_INPUT_EVENT, handlePromptUpdate);
+    if (window) window.addEventListener(PROMPT_INPUT_EVENT, handlePromptUpdate);
     return () =>
       window?.removeEventListener(PROMPT_INPUT_EVENT, handlePromptUpdate);
   }, []);

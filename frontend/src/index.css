@@ -507,14 +507,14 @@ dialog::backdrop {
 
 .markdown hr {
   border: 0;
-  border-top: 1px solid #cdcdcd40;
+  border-top: 1px solid #30303040;
   margin: 1rem 0;
 }
 
 .markdown table th,
 .markdown table td {
   padding: 8px 15px;
-  border-bottom: 1px solid #b3b3b3;
+  border-bottom: 1px solid #30303040;
   text-align: left;
 }
 
@@ -565,7 +565,7 @@ dialog::backdrop {
 
 .markdown ul {
   list-style: revert-layer;
-  /* color: #cfcfcfcf; */
+  color: black;
   padding-left: 0px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -573,13 +573,12 @@ dialog::backdrop {
 }
 
 .markdown ul li::marker {
-  color: #d0d0d0cf;
   padding-top: 10px;
 }
 
 .markdownul li {
   margin-left: 20px;
-
+  color: #000000;
   padding-left: 10px;
   transition: all 0.3s ease;
   line-height: 1.4rem;

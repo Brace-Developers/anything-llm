@@ -70,11 +70,10 @@ export default function SettingsSidebar() {
           className={`z-99 fixed top-0 left-0 transition-all duration-500 w-[100vw] h-[100vh]`}
         >
           <div
-            className={`${
-              showBgOverlay
+            className={`${showBgOverlay
                 ? "transition-all opacity-1"
                 : "transition-none opacity-0"
-            }  duration-500 fixed top-0 left-0 ${USER_BACKGROUND_COLOR} bg-opacity-75 w-screen h-screen`}
+              }  duration-500 fixed top-0 left-0 ${USER_BACKGROUND_COLOR} bg-opacity-75 w-screen h-screen`}
             onClick={() => setShowSidebar(false)}
           />
           <div
@@ -147,7 +146,7 @@ export default function SettingsSidebar() {
         </Link>
         <div
           ref={sidebarRef}
-          className="transition-all duration-500 relative m-[16px] rounded-[16px] bg-sidebar border-2 border-outline min-w-[250px] p-[10px] h-[calc(100%-76px)]"
+          className="transition-all duration-500 relative m-[16px] rounded-[16px] bg-sidebar border-2 border-outline min-w-[250px] p-[10px] h-[calc(100%-70px)]"
         >
           <div className="w-full h-full flex flex-col overflow-x-hidden items-between min-w-[235px]">
             <div className="text-white text-opacity-60 text-sm font-medium uppercase mt-[4px] mb-0 ml-2">

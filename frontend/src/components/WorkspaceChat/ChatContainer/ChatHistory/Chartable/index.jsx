@@ -365,7 +365,7 @@ export function Chartable({ props, workspace }) {
     }
   };
 
-  if (!!props.chatId) {
+  if (props.chatId) {
     return (
       <div className="flex justify-center items-end w-full">
         <div className="py-2 px-4 w-full flex gap-x-5 md:max-w-[80%] flex-col">
@@ -375,7 +375,7 @@ export function Chartable({ props, workspace }) {
               <DownloadGraph onClick={handleDownload} />
               <div ref={ref}>{renderChart()}</div>
               <span
-                className={`flex flex-col gap-y-1 mt-2`}
+                className={`flex flex-col gap-y-1 mt-2 text-black`}
                 dangerouslySetInnerHTML={{
                   __html: renderMarkdown(content.caption),
                 }}
@@ -396,7 +396,7 @@ export function Chartable({ props, workspace }) {
         </div>
         <div className="flex gap-x-5">
           <span
-            className={`flex flex-col gap-y-1 mt-2`}
+            className={`flex flex-col gap-y-1 mt-2 text-black`}
             dangerouslySetInnerHTML={{
               __html: renderMarkdown(content.caption),
             }}

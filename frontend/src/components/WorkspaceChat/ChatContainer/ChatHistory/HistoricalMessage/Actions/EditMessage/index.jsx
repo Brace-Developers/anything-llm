@@ -40,16 +40,14 @@ export function EditMessageAction({ chatId = null, role, isEditing }) {
   if (!chatId || isEditing) return null;
   return (
     <div
-      className={`mt-3 relative ${
-        role === "user" && !isEditing ? "" : "!opacity-100"
-      }`}
+      className={`mt-3 relative ${role === "user" && !isEditing ? "" : "!opacity-100"
+        }`}
     >
       <button
         onClick={handleEditClick}
         data-tooltip-id="edit-input-text"
-        data-tooltip-content={`Edit ${
-          role === "user" ? "Prompt" : "Response"
-        } `}
+        data-tooltip-content={`Editar ${role === "user" ? "Prompt" : "Respuesta"
+          } `}
         className="border-none text-gray-500"
         aria-label={`Editar ${role === "user" ? "Prompt" : "Respuesta"}`}
       >
@@ -102,9 +100,8 @@ export function EditMessageForm({
       <textarea
         ref={formRef}
         name="editedMessage"
-        className={`w-full rounded ${
-          role === "user" ? USER_BACKGROUND_COLOR : AI_BACKGROUND_COLOR
-        } border border-white/20 active:outline-none focus:outline-none focus:ring-0 pr-16 pl-1.5 pt-1.5 resize-y`}
+        className={`w-full rounded ${role === "user" ? USER_BACKGROUND_COLOR : AI_BACKGROUND_COLOR
+          } border border-white/20 active:outline-none focus:outline-none focus:ring-0 pr-16 pl-1.5 pt-1.5 resize-y`}
         defaultValue={message}
         onChange={adjustTextArea}
       />

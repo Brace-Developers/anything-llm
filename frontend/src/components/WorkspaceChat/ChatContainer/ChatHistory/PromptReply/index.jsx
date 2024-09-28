@@ -61,7 +61,7 @@ const PromptReply = ({
         <div className="flex gap-x-5">
           <WorkspaceProfileImage workspace={workspace} />
           <span
-            className={`reply flex flex-col gap-y-1 mt-2`}
+            className={`reply flex flex-col gap-y-1 mt-2 text-black`}
             dangerouslySetInnerHTML={{ __html: renderMarkdown(reply) }}
           />
         </div>
@@ -72,13 +72,13 @@ const PromptReply = ({
 };
 
 export function WorkspaceProfileImage({ workspace }) {
-  if (!!workspace.pfpUrl) {
+  if (workspace.pfpUrl) {
     return (
       <div className="relative w-[35px] h-[35px] rounded-full flex-shrink-0 overflow-hidden">
         <img
           src={workspace.pfpUrl}
           alt="Workspace profile picture"
-          className="absolute top-0 left-0 w-full h-full object-cover rounded-full bg-white"
+          className="absolute top-0 left-0 w-full h-full object-cover rounded-full bg-white "
         />
       </div>
     );

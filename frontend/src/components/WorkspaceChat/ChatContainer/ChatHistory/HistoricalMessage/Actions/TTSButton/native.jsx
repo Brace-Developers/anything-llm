@@ -47,7 +47,7 @@ export default function NativeTTSMessage({ message }) {
         {speaking ? (
           <PauseCircle size={18} className="mb-1" />
         ) : (
-          <SpeakerHigh size={18} className="mb-1" />
+          <SpeakerHigh size={18} className="mb-1 fill-black" />
         )}
       </button>
       <Tooltip

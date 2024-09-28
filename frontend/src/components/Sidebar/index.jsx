@@ -31,15 +31,11 @@ export default function Sidebar() {
         className="flex shrink-0 w-full items-center justify-start mx-[38px] my-[18px]"
         aria-label="Home"
       >
-        <img
-          src={logo}
-          alt="Logo"
-          className="rounded object-contain"
-        />
+        <img src={logo} alt="Logo" className="rounded object-contain" />
       </Link>
       <div
         ref={sidebarRef}
-        className="relative m-[16px] rounded-[16px] bg-sidebar border-2 border-outline min-w-[250px] p-[10px] h-[calc(100%-76px)]"
+        className="relative m-[16px] rounded-[16px] bg-sidebar border-2 border-outline min-w-[250px] p-[10px] h-[calc(100%-103px)]"
       >
         <div className="flex flex-col h-full overflow-x-hidden">
           <div className="flex-grow flex flex-col min-w-[235px]">
@@ -52,7 +48,7 @@ export default function Sidebar() {
                       className="flex flex-grow w-[75%] h-[44px] gap-x-2 py-[5px] px-2.5 mb-2 bg-primary-button rounded-[8px] text-white justify-center items-center hover:bg-opacity-80 transition-all duration-300"
                     >
                       <Plus size={18} weight="bold" />
-                      <p className="text-sidebar text-sm font-semibold">
+                      <p className="text-white text-sm font-semibold">
                         {t("new-workspace.title")}
                       </p>
                     </button>
@@ -129,11 +125,10 @@ export function SidebarMobileHeader() {
         className={`z-99 fixed top-0 left-0 transition-all duration-500 w-[100vw] h-[100vh]`}
       >
         <div
-          className={`${
-            showBgOverlay
+          className={`${showBgOverlay
               ? "transition-all opacity-1"
               : "transition-none opacity-0"
-          }  duration-500 fixed top-0 left-0 ${USER_BACKGROUND_COLOR} bg-opacity-75 w-screen h-screen`}
+            }  duration-500 fixed top-0 left-0 ${USER_BACKGROUND_COLOR} bg-opacity-75 w-screen h-screen`}
           onClick={() => setShowSidebar(false)}
         />
         <div

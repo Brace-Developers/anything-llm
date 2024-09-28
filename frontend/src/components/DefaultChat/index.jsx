@@ -80,7 +80,7 @@ export default function DefaultChatContainer() {
       </div>
     </React.Fragment>,
 
-    <React.Fragment key="msg3">
+    /*<React.Fragment key="msg3">
       <div
         className={`flex justify-center items-end w-full ${AI_BACKGROUND_COLOR}`}
       >
@@ -91,7 +91,7 @@ export default function DefaultChatContainer() {
             <UserIcon user={{ uid: "system" }} role={"assistant"} />
             <div>
               <span
-                className={`whitespace-pre-line text-white font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
+                className={`whitespace-pre-line text-black font-normal text-sm md:text-sm flex flex-col gap-y-1 mt-2`}
               >
                 {t("welcomeMessage.part3")}
               </span>
@@ -108,7 +108,7 @@ export default function DefaultChatContainer() {
           </div>
         </div>
       </div>
-    </React.Fragment>,
+    </React.Fragment>,*/
 
     <React.Fragment key="msg4">
       <div
@@ -279,7 +279,7 @@ export default function DefaultChatContainer() {
 
   useEffect(() => {
     function processMsgs() {
-      if (!!window.localStorage.getItem("anythingllm_intro")) {
+      if (window.localStorage.getItem("anythingllm_intro")) {
         setMockMessages([...MESSAGES]);
         return false;
       } else {
@@ -310,23 +310,23 @@ export default function DefaultChatContainer() {
       {isMobile && <SidebarMobileHeader />}
       {fetchedMessages.length === 0
         ? mockMsgs.map((content, i) => {
-            return <React.Fragment key={i}>{content}</React.Fragment>;
-          })
+          return <React.Fragment key={i}>{content}</React.Fragment>;
+        })
         : fetchedMessages.map((fetchedMessage, i) => {
-            return (
-              <React.Fragment key={i}>
-                <ChatBubble
-                  message={
-                    fetchedMessage.user === ""
-                      ? fetchedMessage.response
-                      : fetchedMessage.user
-                  }
-                  type={fetchedMessage.user === "" ? "response" : "user"}
-                  popMsg={popMsg}
-                />
-              </React.Fragment>
-            );
-          })}
+          return (
+            <React.Fragment key={i}>
+              <ChatBubble
+                message={
+                  fetchedMessage.user === ""
+                    ? fetchedMessage.response
+                    : fetchedMessage.user
+                }
+                type={fetchedMessage.user === "" ? "response" : "user"}
+                popMsg={popMsg}
+              />
+            </React.Fragment>
+          );
+        })}
       {showingNewWsModal && <NewWorkspaceModal hideModal={hideNewWsModal} />}
     </div>
   );

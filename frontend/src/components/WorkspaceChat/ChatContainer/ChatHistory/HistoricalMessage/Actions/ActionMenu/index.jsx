@@ -47,7 +47,7 @@ function ActionMenu({ chatId, forkThread, isEditing, role }) {
         onClick={toggleMenu}
         className="border-none text-zinc-300 hover:text-zinc-100 transition-colors duration-200"
         data-tooltip-id="action-menu"
-        data-tooltip-content="More actions"
+        data-tooltip-content="Más acciones"
         aria-label="More actions"
       >
         <DotsThreeVertical size={24} weight="bold" />
@@ -59,14 +59,14 @@ function ActionMenu({ chatId, forkThread, isEditing, role }) {
             className="border-none flex items-center gap-x-2 hover:bg-white/10 py-1.5 px-2 transition-colors duration-200 w-full text-left"
           >
             <TreeView size={18} />
-            <span className="text-sm">Fork</span>
+            <span className="text-sm">Bifurcar</span>
           </button>
           <button
             onClick={handleDelete}
             className="border-none flex items-center gap-x-2 hover:bg-white/10 py-1.5 px-2 transition-colors duration-200 w-full text-left"
           >
             <Trash size={18} />
-            <span className="text-sm">Delete</span>
+            <span className="text-sm">Borrar</span>
           </button>
         </div>
       )}

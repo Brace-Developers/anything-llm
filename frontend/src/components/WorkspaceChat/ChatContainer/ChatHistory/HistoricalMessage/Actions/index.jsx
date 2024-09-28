@@ -132,7 +132,7 @@ function RegenerateMessage({ regenerateMessage, chatId }) {
       <button
         onClick={() => regenerateMessage(chatId)}
         data-tooltip-id="regenerate-assistant-text"
-        data-tooltip-content="Regenerate response"
+        data-tooltip-content="Volver a generar la respuesta"
         className="border-none text-gray-500"
         aria-label="Regenerate"
       >
